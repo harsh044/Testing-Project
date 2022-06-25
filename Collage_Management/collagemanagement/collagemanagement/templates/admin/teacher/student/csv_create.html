@@ -1,0 +1,37 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+{% block extrahead  %}
+{{ block.super }}
+<link href="{% static 'admin/css/main.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+{{ block.super }}
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% comment %} {{form.csv_upload}} {% endcomment %}
+    <div class="notes-box">
+        <span class="master-questions"><a href="{% static 'admin/files/StudentSampleFormat.xlsx' %}">Click here
+                to download
+                sample Helpie End User Details format</a></span>
+    </div>
+    <fieldset class="aligned module">
+        <div class="form-row">
+            <div>
+                <label class="required" for="csv_upload">Select File</label>
+                <div class="form-group file-area">
+                    <input type="file" required="required"
+                        accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                        name="csv_upload">
+                    <div class="file-dummy">
+                        <div class="success">Great, your file are selected.</div>
+                        <div class="default">Please select file</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+    <button type="submit">Upload File</button>
+</form>
+{% endblock %}

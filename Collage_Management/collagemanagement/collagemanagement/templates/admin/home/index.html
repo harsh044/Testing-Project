@@ -1,0 +1,23 @@
+{% extends "admin/base_site.html" %} {% load static %} {% block content %}
+{{block.super}}
+<div class="container d-flex">
+  {% if user.is_superuser %}
+    <a class="text-decoration-none" href="/college-admin/teacher/account">
+        <div class="card text-bg-success me-2" style="width: 18rem">
+        <div class="card-body my-3 d-flex flex-column">
+            <h5 class="card-title fs-4">{{account}}</h5>
+            <h5 class="card-title fs-4">Accounts</h5>
+        </div>
+        </div>
+    </a>
+  {% endif %}
+  <a class="text-decoration-none" href="/college-admin/teacher/student">
+    <div class="card text-bg-success ms-2" style="width: 18rem">
+      <div class="card-body my-3 d-flex flex-column">
+        <h5 class="card-title fs-4">{{student}}</h5>
+        <h5 class="card-title fs-4">Students</h5>
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock %}

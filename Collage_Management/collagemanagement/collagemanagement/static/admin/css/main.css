@@ -1,0 +1,632 @@
+/* start: base.css overrides */
+/* 
+    *****constants*****
+    primary color: #29A99F
+    primary dark color: #1B6F69
+    primary light shade: #00ffed
+    danger color: #ff3547
+    danger dark color: #ee293b
+    default color: #78909c
+    default dark color: #60737d
+    success color: #00c851
+
+*/
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.form-row div.help {
+    font-size: 0.7rem;
+}
+
+#user-tools,
+.module h2, .module caption, .inline-group h2,
+#changelist-filter li,
+#changelist .paginator,
+.actionlist span,
+.inline-related h3 span.delete label,
+.form-row .datetime .datetimeshortcuts,
+.small,
+.add-row > a {
+    font-size: 0.875rem;
+}
+
+table tr td, table tr th,
+.actionlist a,
+#changelist-form .actions > span.action-counter,
+.form-row label,
+.inline-related h3,
+.form-row .datetime {
+    font-size: 0.9rem;
+}
+
+#changelist-filter h3,
+#changelist #changelist-search > div input#searchbar,
+#content-related h3,
+#changelist-form .actions > label,
+.form-row input,
+.form-row textarea,
+.form-row select,
+#changelist-form .actions > label select {
+    font-size: 1rem;
+}
+
+#changelist-filter h2 {
+    font-size: 1.125rem;
+}
+
+#user-tools,
+table tr td {
+    font-weight: 400;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited,
+#changelist-filter h3,
+table tr th,
+#content-related h3,
+.form-row label,
+.form-row .datetime {
+    font-weight: 500;
+}
+
+#changelist-filter h2 {
+    font-weight: 700;
+}
+
+#header {
+    background-color: #1B6F69;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    color: #ffc;
+    overflow: hidden;
+    line-height: initial;
+}
+
+div.breadcrumbs,
+.module h2, .module caption, .inline-group h2 {
+    background-color: #29A99F;
+}
+
+a:link, a:visited,
+#changelist-filter li.selected a,
+#changelist-filter a:focus, #changelist-filter a:hover, #changelist-filter li.selected a:focus, #changelist-filter li.selected a:hover {
+    color: #1B6F69;
+}
+
+/* {
+    color: #29A99F;
+} */
+
+#user-tools,
+div.breadcrumbs {
+    color: #00ffed;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: white;
+}
+
+
+.inline-related h3 {
+    line-height: 1.75;
+}
+#user-tools a {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.75);
+}
+
+#changelist-filter li.selected {
+    border-color: #29A99F;
+}
+#changelist-filter ul {
+    border-color: rgba(41, 169, 159, 0.8)
+}
+
+#changelist-filter h2 {
+    padding: 8px 16px;
+    border-radius: 4px 4px 0 0;
+}
+
+.add-row > a {
+    padding-left: 20px;
+}
+
+.form-row div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.form-row .checkbox-row label { order: 0; }
+.form-row .checkbox-row input { order: 1; }
+.form-row label {
+    flex: 0 0 160px;
+}
+.form-row div.help {
+    flex: 0 0 100%;
+}
+
+.submit-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.submit-row input[type="button"],
+.submit-row input[type="submit"],
+.submit-row button,
+.submit-row a.deletelink,
+.submit-row a {
+    margin-left: 8px !important;
+}
+
+#changelist #changelist-search > div {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#changelist #changelist-search > div label[for="searchbar"] {
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    min-height: 40px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #e1e1e1;
+}
+#changelist #changelist-search > div label[for="searchbar"] > img {
+    margin: 0;
+}
+.form-row input[type="text"],
+.form-row input[type="number"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row textarea,
+.form-row select,
+#changelist #changelist-search > div input#searchbar,
+#changelist-form .actions > label select {
+    background-color: white;
+    min-height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    resize: none;
+    min-width: 20em;
+}
+
+.form-row .datetime {
+    margin: 0;
+}
+
+#changelist #changelist-search > div input#searchbar {
+    margin-right: 16px;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+#changelist #changelist-search > div input[type="submit"] {
+    margin-right: 12px !important;
+}
+
+#changelist-form .actions > label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+table tr td, table tr th {
+    line-height: 1.25;
+}
+/* end: base.css overrides */
+
+.timezonewarning {
+    display: none;
+}
+
+.add-related, .change-related, .delete-related{
+    display: none !important;
+}
+
+input[name="_addanother"], input[name="_continue"]{
+    display: none !important;
+}
+
+/* start: common */
+* {
+    box-sizing: border-box;
+}
+.section-heading {
+    font-size: 1.15rem !important;
+    margin: 0 auto 1em;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 4px;
+}
+.section-heading::after {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 2px;
+    background-color: #1B6F69;
+    bottom: 0;
+    left: 0;
+}
+.section-subheading {
+    font-size: 1rem !important;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 auto 1em;
+}
+
+.custom-hr {
+    border: 0;
+    height: 2px;
+    border-bottom: 1px solid #1B6F69 !important;
+    margin: 16px auto;
+    background-color: transparent;
+    color: transparent;
+}
+
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.object-tools a.addlink,
+.object-tools a.historylink,
+#changelist-form .actions > button.button,
+#changelist #toolbar form input[type="submit"],
+.submit-row input[type="button"],
+.submit-row input[type="submit"],
+.submit-row a.deletelink,
+.btn {
+    color: #29A99F;
+    padding: 6px 16px;
+    font-size: 0.9rem !important;
+    line-height: 1.75;
+    min-width: 64px;
+    height: 40px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    text-decoration: none;
+    vertical-align: middle;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.btn:hover,
+.btn:focus {
+    background-color: rgba(68, 126, 155, 0.08);
+    text-decoration: none;
+}
+
+.submit-row a.deletelink,
+a.deletelink,
+.object-tools a.addlink,
+.object-tools a.historylink,
+#changelist-form .actions > button.button,
+#changelist #toolbar form input[type="submit"],
+.submit-row input[type="button"],
+.submit-row input[type="submit"],
+.btn.btn-contained {
+    border: 1px solid transparent;
+    background-image: none;
+    background-color: #29A99F;
+    color: white;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.object-tools a.addlink:hover,
+.object-tools a.addlink:focus,
+#changelist-form .actions > button.button:hover,
+#changelist-form .actions > button.button:focus,
+#changelist #toolbar form input[type="submit"]:hover,
+#changelist #toolbar form input[type="submit"]:focus,
+.submit-row input[type="button"]:hover,
+.submit-row input[type="button"]:focus,
+.submit-row input[type="submit"]:hover,
+.submit-row input[type="submit"]:focus,
+.btn.btn-contained:hover,
+.btn.btn-contained:focus {
+    background-color: #1B6F69;
+}
+
+.submit-row a.deletelink,
+a.deletelink,
+.btn.btn-contained.btn-danger {
+    background-color: #ff3547;
+    color: white;
+}
+
+a.deletelink:hover,
+a.deletelink:focus,
+.submit-row a.deletelink:hover,
+.submit-row a.deletelink:focus,
+.btn.btn-contained.btn-danger:hover,
+.btn.btn-contained.btn-danger:focus {
+    background-color: #ee293b;
+}
+
+.object-tools a.historylink,
+.btn.btn-contained.btn-default {
+    background-color: #78909c;
+    color: white;
+}
+
+.object-tools a.historylink:hover,
+.object-tools a.historylink:focus,
+.btn.btn-contained.btn-default:hover,
+.btn.btn-contained.btn-default:focus {
+    background-color: #60737d;
+}
+
+.btn.btn-outlined {
+    border: 2px solid rgba(68, 126, 155, 0.5);
+    color: rgba(68, 126, 155, 1);
+}
+
+.btn.btn-outlined:hover,
+.btn.btn-outlined:focus {
+    border-color: rgba(68, 126, 155, 1);
+    background-color: rgba(68, 126, 155, 0.08);
+}
+
+.btn.btn-outlined.btn-danger {
+    border-color: rgba(255, 53, 71, 0.5);
+    color: rgba(255, 53, 71, 1);
+}
+
+.btn.btn-outlined.btn-danger:hover,
+.btn.btn-outlined.btn-danger:focus {
+    border-color: rgba(255, 53, 71, 1);
+    background-color: rgba(255, 53, 71, 0.08);
+}
+
+.btn.btn-outlined.btn-default {
+    border-color: rgba(120, 144, 156, 0.5);
+    color: rgba(120, 144, 156, 1);
+}
+
+.btn.btn-outlined.btn-default:hover,
+.btn.btn-outlined.btn-default:focus {
+    border-color: rgba(120, 144, 156, 1);
+    background-color: rgba(120, 144, 156, 0.08);
+}
+
+.btn .material-icons {
+    font-size: 1.25em !important;
+    margin-right: 8px;
+}
+
+.table-responsive {
+    overflow: auto;
+}
+.custom-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.custom-table tr {
+    color: inherit;
+    outline: 0;
+    vertical-align: middle;
+}
+.custom-table td,
+.custom-table th {
+    padding: 14px 40px 14px 16px;
+    font-size: 0.9rem !important;
+    text-align: left;
+    line-height: 1.43;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.015em;
+    vertical-align: inherit;
+}
+.custom-table tbody tr:last-child td,
+.custom-table tbody tr:last-child th {
+    border-bottom-color: transparent;
+}
+
+.visible-modal {
+    overflow: hidden;
+}
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+}
+.custom-modal.show-modal {
+    display: flex;
+}
+.custom-modal .custom-modal-wrapper {
+    position: relative;
+    display: flex;
+    flex: 0 1 600px;
+    min-width: 320px;
+    background-color: white;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.custom-modal .custom-modal-wrapper .custom-modal-head {
+    flex: 0 0 100%;
+    padding: 8px 16px;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #79aec8;
+}
+.custom-modal .custom-modal-wrapper .custom-modal-head .custom-modal-title {
+    flex: 1 1 auto;
+    margin: 0;
+}
+.custom-modal .custom-modal-wrapper .custom-modal-head .custom-modal-close {
+    flex: 0 0 auto;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+.custom-modal .custom-modal-wrapper .custom-modal-body {
+    flex: 0 0 100%;
+    padding: 16px;
+    border-radius: 0 0 4px 4px;
+}
+
+.file-area {
+    width: 20rem;
+    position: relative;
+}
+
+.file-area input[type=file] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-area .file-dummy {
+    width: 100%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out;
+}
+
+.file-area .file-dummy .success {
+    display: none;
+}
+
+.file-area:hover .file-dummy {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.file-area input[type=file]:focus+.file-dummy {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.file-area input[type=file]:valid+.file-dummy {
+    background-color: #00c851;
+    color: white;
+}
+
+.file-area input[type=file]:valid+.file-dummy .success {
+    display: inline-block;
+}
+
+.file-area input[type=file]:valid+.file-dummy .default {
+    display: none;
+}
+
+.text-success{
+    color: #00c851
+}
+
+table thead th.sorted .sortoptions a.sortremove:after,
+.sortpriority {
+    display: none;
+}
+
+.deletelink-box{
+    position: absolute;
+    left: 70px;
+}
+
+
+.object-tools li a.historylink{
+    display: none;
+}
+
+.submit-row a.closelink{
+    height: 35px;
+}
+/* #changelist .actions{
+    background-color: #fff;
+    color: #999;
+}
+#changelist .actions select{
+    color:#000;
+} */
+
+#changelist table tbody tr.selected{
+    background-color: #FFFFCC;
+}
+#changelist #toolbar{
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #f8f8f8;
+    color: #666;
+}
+#changelist #changelist-search > div input#searchbar{
+    margin-right: 16px;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+}
+#changelist-filter{
+    background-color: #f8f8f8;
+}
+h1 {
+    margin: 0 0 20px;
+    font-weight: 300;
+    font-size: 23px;
+    color: #666;
+}
+.mulitple-choice li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mulitple-choice{
+    height: 15rem;
+    overflow-y: scroll;
+}
+.list{
+    margin-right: 150px;
+}
+.colM>h2{
+    display: none;
+}
+.submit-row a.closelink,
+.submit-row a.closelink:hover{
+    background-color: #29A99F;
+    color: white;
+    text-decoration: none;
+}
+
+/* end: common */

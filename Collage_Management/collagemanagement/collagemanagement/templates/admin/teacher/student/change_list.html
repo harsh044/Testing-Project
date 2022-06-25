@@ -1,0 +1,25 @@
+{% extends "admin/change_list.html" %} 
+{% load static %}
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="{% url 'admin:index' %}">Home</a>
+        <a href="{% url 'admin:teacher_student_changelist' %}">&rsaquo; Student</a>
+    </div>
+{% endblock %}
+{% block content %} 
+    {% block object-tools %}
+        <ul class="object-tools">
+        <li>
+            <a href="upload_csv/" class="addlink">
+            Upload Students
+            </a>
+        </li>
+        <li>
+            <a href="/college-admin/teacher/student/add/" class="addlink">
+            Add student
+            </a>
+        </li>
+        </ul>
+    {% endblock %} 
+    {{ block.super }} 
+{% endblock%}

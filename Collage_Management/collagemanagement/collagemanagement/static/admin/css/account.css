@@ -1,0 +1,13 @@
+fieldset .form-row{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+fieldset .form-row .errorlist {
+    margin-top: 0.5rem;
+}
+
+fieldset .form-row .errorlist li {
+    margin-bottom: 0;
+}
